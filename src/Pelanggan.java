@@ -2,14 +2,12 @@ public class Pelanggan extends User {
     private String JenisKelamin;
     private String Alamat;
     private int NoTelp;
-    private double Rating;
 
     public Pelanggan(String nama, String email, String username, String password, String JenisKelamin, String Alamat, int NoTelp) {
         super(nama, email, username, password);
         this.JenisKelamin = JenisKelamin;
         this.Alamat = Alamat;
         this.NoTelp = NoTelp;
-        this.Rating = Rating;
     }
 
     public String getUserType(){

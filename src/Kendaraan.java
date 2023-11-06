@@ -1,9 +1,11 @@
 public class Kendaraan {
-    private int Kendaraan_Id;
-    private String jenisKendaraan;
-    private String merkKenderaan;
-    private int ccKendaraan;
-    private int harga;
+    public int Kendaraan_Id;
+    public String jenisKendaraan;
+    public String merkKenderaan;
+    public int ccKendaraan;
+    public int harga;
+    private double Rating;
+
 
     public Kendaraan(int Kendaraan_Id, String jenisKendaraan, String merkKenderaan, int ccKendaraan, int harga) {
         this.Kendaraan_Id = Kendaraan_Id;
