@@ -42,6 +42,18 @@ public class Admin extends User  {
         }
 
 //  menghapus kendaraan
+        public static boolean deleteKendaraan(List<Kendaraan> kendaraanList, int Kendaraan_Id) {
+            for (Kendaraan kendaraan : kendaraanList) {
+                if (kendaraan.getKendaraan_Id() == Kendaraan_Id) {
+                    kendaraanList.remove(kendaraan);
+                    return true;
+                }
+            }
+            return false;
+        }
 
+        public void createNotifikasi(String pesan) {
+            System.out.println("Notifikasi: " + pesan);
+        }
 
 }

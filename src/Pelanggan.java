@@ -1,4 +1,5 @@
 public class Pelanggan extends User {
+    private int Pelanggan_Id;
     private String JenisKelamin;
     private String Alamat;
     private int NoTelp;
@@ -13,9 +14,7 @@ public class Pelanggan extends User {
     public String getUserType(){
         return "Pelanggan";
     }
-    public double getRating() {
-        return Rating;
-    }
+
 
     public void viewPromo(Promo promo) {
         if (promo.isAktif()) {
@@ -28,9 +27,6 @@ public class Pelanggan extends User {
         }
     }
 
-    public void addRating(double rating) {
-        this.Rating = Rating;
-    }
     public void addAtributBerkendara() {
 
     }

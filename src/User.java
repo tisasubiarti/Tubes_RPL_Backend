@@ -21,9 +21,23 @@ public class User {
 
 
 
+    public void login() {
+        // Check database if user any give back response true
+        Boolean user = false;
 
-    public boolean login(String enteredPassword) {
-        return password.equals(enteredPassword);
+        if(user){
+            Boolean checkPassword = false;
+            // Get role from databse
+            String  role = "user";
+            // First one if to check the password if that password is not same on database give back response 400
+            if(!checkPassword) {
+            } else {
+                // Give back to the resposne json {"role": "user" || "admin", "accessToken": "ASDLASKDASLDKASLDKASL"}
+
+            }
+        } else {
+            // Check database if user empty give back response false with status code 400
+        }
     }
 
     public void logout() {

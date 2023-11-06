@@ -1,4 +1,5 @@
 public class Pembayaran {
+    private int Pembayaran_Id;
     private String jenisPembayaran;
     private String tanggalPembayaran;
     private double totalPembayaran;
